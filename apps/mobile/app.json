@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "VNPolice Care",
+    "slug": "vnpolice-care",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "vnpolicecare",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      ["expo-location", { "locationWhenInUsePermission": "Cho phép VNPolice Care dùng vị trí khi bạn chủ động định vị hoặc báo sự cố." }],
+      ["expo-image-picker", { "photosPermission": "Cho phép VNPolice Care chọn ảnh hiện trường để đính kèm tin báo.", "cameraPermission": "Cho phép VNPolice Care chụp ảnh hiện trường khi bạn chủ động sử dụng camera." }],
+      ["expo-secure-store", { "configureAndroidBackup": true }]
+    ],
+    "android": {
+      "package": "vn.gov.demo.vnpolicecare",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"],
+      "config": { "googleMaps": { "apiKey": "" } }
+    },
+    "ios": {
+      "bundleIdentifier": "vn.gov.demo.vnpolicecare",
+      "supportsTablet": true
+    },
+    "extra": { "router": {} }
+  }
+}
